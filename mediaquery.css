@@ -1,0 +1,41 @@
+@media screen and (max-width: 768px){
+    .containerSobre{
+        height: 500px;
+    }
+
+    #inicio{
+       background-size: cover;
+       background-position: center;
+       width: 100%;
+       background-repeat: no-repeat;
+       background-image: url(asstes/images/header-background.png);
+    }
+}
+
+@media screen and (max-width: 767px){
+    .containerSobre{
+        height: 500px;
+    }
+
+     #inicio{
+        background-image: url(asstes/images/header-background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 480px){
+    .containerSobre{
+        height: 500px;
+    }
+
+     #inicio{
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-image: url(asstes/images/header-background.png);
+    }
+}
+}

@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#inicio{
+    background-image: url(asstes/images/background-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 440px;
+}
+
+#menu > a:hover{
+    text-decoration: underline;
+    text-decoration-color:#2ecc71 ;
+    color: #2ecc71;
+}
+
+#service{
+    text-decoration: underline;
+    text-decoration-color: #2ecc71;
+}
+
+#projetos-h2{
+    text-decoration: underline;
+    text-decoration-color: #2ecc71;
+}
+
+.card{
+    cursor: pointer;
+}
+
+.project-card{
+    cursor: pointer;
+}
+
+.project-card > a:hover{
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #2ecc71;
+}
+
+#sobre-h2{
+    text-decoration: underline;
+    text-decoration-color: #2ecc71;
+    margin-top: 20px;
+}
+#sobre{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.containerSobre{
+    border: 1px solid;
+    border-radius: 18px;
+    border-color: #2ecc7077;
+    height: 300px;
+    width: 85%;
+}
+
+.containerSobre > p{
+    font-size: 13px;
+    text-align: center;
+}
+
+#contato{
+    text-decoration: underline;
+    text-decoration-color: #2ecc71;
+}
+
+.card > p{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+}
+

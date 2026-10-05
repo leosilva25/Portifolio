@@ -1,0 +1,134 @@
+.processo {
+    padding: 120px 8%;
+    background: #000;
+    position: relative;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section-title span {
+    color: #39ff14;
+    font-size: .85rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.section-title h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+.processo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    position: relative;
+}
+
+.processo-grid::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 12%;
+    width: 76%;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #39ff14,
+        transparent
+    );
+    z-index: 1;
+}
+
+.processo-item {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.numero {
+    width: 80px;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+
+    background: #0f0f0f;
+
+    border: 2px solid #39ff14;
+
+    color: #39ff14;
+
+    font-size: 2rem;
+    font-weight: 700;
+
+    box-shadow:
+        0 0 15px rgba(57,255,20,.4),
+        0 0 30px rgba(57,255,20,.2);
+
+    transition: .3s;
+}
+
+.icone {
+    font-size: 3rem;
+    color: #39ff14;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+
+.processo-item h3 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.processo-item p {
+    color: #bcbcbc;
+    line-height: 1.7;
+    font-size: .95rem;
+}
+
+.processo-item:hover .numero {
+    transform: translateY(-8px);
+    box-shadow:
+        0 0 25px rgba(57,255,20,.7),
+        0 0 45px rgba(57,255,20,.5);
+}
+
+.processo-item:hover .icone {
+    transform: scale(1.1);
+}
+
+@media(max-width: 992px){
+
+    .processo-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .processo-grid::before{
+        display:none;
+    }
+
+}
+
+@media(max-width: 600px){
+
+    .processo-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2{
+        font-size:2rem;
+    }
+
+}

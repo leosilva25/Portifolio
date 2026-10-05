@@ -1,0 +1,135 @@
+.diferenciais{
+    padding:120px 8%;
+    background:#000;
+    position:relative;
+}
+
+.diferenciais .section-title{
+    text-align:center;
+    max-width:800px;
+    margin:0 auto 70px;
+}
+
+.diferenciais .section-title span{
+    color:#39ff14;
+    font-size:.85rem;
+    font-weight:700;
+    letter-spacing:3px;
+}
+
+.diferenciais .section-title h2{
+    color:#fff;
+    font-size:2.5rem;
+    margin:15px 0;
+}
+
+.diferenciais .section-title p{
+    color:#bdbdbd;
+    line-height:1.8;
+}
+
+.diferenciais-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.diferencial-card{
+
+    background:#0d0d0d;
+
+    border:1px solid rgba(57,255,20,.20);
+
+    border-radius:20px;
+
+    padding:35px 30px;
+
+    text-align:center;
+
+    transition:.35s ease;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.diferencial-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:4px;
+
+    background:#39ff14;
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:.4s;
+}
+
+.diferencial-card:hover::before{
+    transform:scaleX(1);
+}
+
+.diferencial-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#39ff14;
+
+    box-shadow:
+    0 0 20px rgba(57,255,20,.12),
+    0 0 40px rgba(57,255,20,.05);
+}
+
+.diferencial-card i{
+
+    font-size:3rem;
+
+    color:#39ff14;
+
+    margin-bottom:20px;
+
+    transition:.3s;
+}
+
+.diferencial-card:hover i{
+    transform:scale(1.1);
+}
+
+.diferencial-card h3{
+
+    color:#fff;
+
+    margin-bottom:15px;
+
+    font-size:1.25rem;
+}
+
+.diferencial-card p{
+
+    color:#bdbdbd;
+
+    line-height:1.8;
+
+    font-size:.95rem;
+}
+
+@media(max-width:768px){
+
+    .diferenciais{
+        padding:80px 6%;
+    }
+
+    .diferenciais .section-title h2{
+        font-size:2rem;
+    }
+
+}
